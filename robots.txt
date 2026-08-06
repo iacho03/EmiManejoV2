@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Rutas linkeadas en la navegación que todavía no existen como páginas.
+# Se bloquean para no gastar crawl budget en 404 hasta que se publiquen.
+Disallow: /servicios/
+Disallow: /clases-de-manejo-
+Disallow: /politica-de-privacidad
+
+Sitemap: https://emanejo.com.ar/sitemap.xml

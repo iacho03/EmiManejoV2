@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EmiManejo — sitemap
+  Sólo se listan las 4 páginas que existen como archivo. Las rutas
+  /servicios/…, /clases-de-manejo-… y /politica-de-privacidad están
+  linkeadas en el HTML pero todavía no tienen página: quedan fuera
+  a propósito hasta que se publiquen.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://emanejo.com.ar/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://emanejo.com.ar/blog/requisitos-licencia-conducir-buenos-aires-2026</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emanejo.com.ar/blog/como-prepararse-examen-practico-caba</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emanejo.com.ar/blog/errores-comunes-principiantes</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

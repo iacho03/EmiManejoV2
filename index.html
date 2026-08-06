@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  EmiManejo — landing page
+  ------------------------------------------------------------------
+  PLACEHOLDERS A REEMPLAZAR ANTES DE PUBLICAR:
+  · Número de WhatsApp 5491100000000 — aparece 11 veces (10 links + JSON-LD telephone).
+  · 3 imágenes: placeholders CSS (.ph) — las 3 de blog.
+    Fotos reales ya cargadas: hero (/images/emi-instructor-auto.webp)
+    y "Hola, soy Emi" (/images/emi-clase-alumno.jpg).
+    Al reemplazar por <img>, usar el aria-label actual como base del alt.
+  · Instagram: verificar el handle @emimanejo (va en sameAs del JSON-LD).
+  · DOMINIO: canonical, OG y JSON-LD apuntan a emanejo.com.ar (sin "i").
+    Verificar contra el dominio real antes de publicar — si es emimanejo.com.ar
+    hay que corregir 17 referencias + robots.txt + sitemap.xml.
+  · /politica-de-privacidad sigue linkeada en el footer y no existe: es el
+    único 404 que queda. Las rutas /servicios/… y /clases-de-manejo-… se
+    redirigieron a anclas de esta misma página y están en Disallow del robots.txt.
+  · aggregateRating NO se declaró en el JSON-LD a propósito: el "4.9 en Google"
+    del hero no es verificable y marcarlo puede traer una acción manual.
+  ------------------------------------------------------------------
+-->
+
+<title>Clases de Manejo a Domicilio en CABA | EmiManejo</title>
+<meta name="description" content="Clases de manejo a domicilio en Palermo, Belgrano y toda CABA. Instructor certificado, VW Polo automático. Pedí tu clase por WhatsApp.">
+<meta name="keywords" content="clases de manejo a domicilio CABA, instructor de manejo particular Buenos Aires, clases de manejo auto automático, aprender a manejar CABA">
+<link rel="canonical" href="https://emanejo.com.ar/">
+<meta name="author" content="EmiManejo">
+<meta name="geo.region" content="AR-C">
+<meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires">
+<meta property="og:site_name" content="EmiManejo">
+<meta property="og:title" content="Clases de manejo a domicilio en CABA — EmiManejo">
+<meta property="og:description" content="Instructor certificado, VW Polo automático con doble comando. Te paso a buscar por Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://emanejo.com.ar/">
+<meta property="og:locale" content="es_AR">
+<meta property="og:image" content="https://emanejo.com.ar/images/emi-clase-alumno.jpg">
+<meta property="og:image:alt" content="Emi explicándole el volante a un alumno durante una clase de manejo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clases de manejo a domicilio en CABA — EmiManejo">
+<meta name="twitter:description" content="Instructor certificado, VW Polo automático con doble comando. Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.">
+<meta name="twitter:image" content="https://emanejo.com.ar/images/emi-clase-alumno.jpg">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+
+<!-- Marca que hay JS: los estados iniciales ocultos (botón WA, reveal, FAQ cerrado)
+     sólo aplican si el JS puede después revertirlos. Sin JS, todo queda visible. -->
+<script>document.documentElement.classList.add('js');</script>
+<script src="./components.js" defer></script>
+<script src="./main.js" defer></script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DrivingSchool",
+"@id":"https://emanejo.com.ar/#business",
+"name":"EmiManejo",
+"description":"Clases de manejo a domicilio en CABA con instructor certificado. VW Polo automático con doble comando, servicio puerta a puerta en Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.",
+"url":"https://emanejo.com.ar/",
+"image":"https://emanejo.com.ar/images/emi-clase-alumno.jpg",
+"logo":"https://emanejo.com.ar/images/emi-instructor-auto.webp",
+"address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressRegion":"CABA","addressCountry":"AR"},
+"telephone":"+5491100000000",
+"priceRange":"$$",
+"currenciesAccepted":"ARS",
+"sameAs":["https://instagram.com/emimanejo"],
+"areaServed":[
+{"@type":"Place","name":"Palermo, CABA"},
+{"@type":"Place","name":"Belgrano, CABA"},
+{"@type":"Place","name":"Caballito, CABA"},
+{"@type":"Place","name":"Villa Urquiza, CABA"},
+{"@type":"Place","name":"Zona Norte, CABA"}],
+"knowsLanguage":"es-AR",
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"Paquetes de clases de manejo","itemListElement":[
+{"@type":"Offer","name":"Starter","description":"4 clases de 60 minutos con auto de doble comando, instructor certificado y servicio puerta a puerta.","priceCurrency":"ARS","availability":"https://schema.org/InStock","itemOffered":{"@type":"Service","name":"Paquete Starter — 4 clases de manejo","serviceType":"Clases de manejo"}},
+{"@type":"Offer","name":"Estándar","description":"8 clases de 60 minutos, doble comando, puerta a puerta y orientación para el examen teórico.","priceCurrency":"ARS","availability":"https://schema.org/InStock","itemOffered":{"@type":"Service","name":"Paquete Estándar — 8 clases de manejo","serviceType":"Clases de manejo"}},
+{"@type":"Offer","name":"Intensivo","description":"12 clases de 60 minutos, orientación para el teórico y préstamo del auto para rendir el examen práctico.","priceCurrency":"ARS","availability":"https://schema.org/InStock","itemOffered":{"@type":"Service","name":"Paquete Intensivo — 12 clases de manejo","serviceType":"Clases de manejo"}},
+{"@type":"Offer","name":"VIP Examen","description":"Clase de repaso pre-examen, recorrido del circuito, préstamo del auto y acompañamiento el día del examen.","priceCurrency":"ARS","availability":"https://schema.org/InStock","itemOffered":{"@type":"Service","name":"VIP Examen — alquiler de auto para rendir","serviceType":"Alquiler de auto para examen práctico"}}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite",
+"@id":"https://emanejo.com.ar/#website",
+"name":"EmiManejo",
+"url":"https://emanejo.com.ar/",
+"inLanguage":"es-AR",
+"publisher":{"@id":"https://emanejo.com.ar/#business"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Cuántas clases necesito para aprender a manejar?","acceptedAnswer":{"@type":"Answer","text":"Depende de tu punto de partida. La mayoría llega bien preparado con el paquete de 8 clases; si arrancás de cero o querés ir tranquilo, el de 12 te da más margen. En la primera clase vemos cómo venís y te digo con franqueza cuántas te faltan."}},
+{"@type":"Question","name":"¿Las clases son en caja manual o automática?","acceptedAnswer":{"@type":"Answer","text":"Las clases son en un VW Polo con caja automática y doble comando. Al no tener que pensar en el embrague podés concentrarte en la calle, y los pedales de seguridad hacen que todo sea mucho más tranquilo desde el primer día."}},
+{"@type":"Question","name":"¿Vienen a buscarme? ¿Dónde se hacen las clases?","acceptedAnswer":{"@type":"Answer","text":"Sí, el servicio es puerta a puerta: te paso a buscar por tu casa, el trabajo o donde te quede cómodo. Doy clases en Palermo, Belgrano, Caballito, Villa Urquiza y zona norte; si estás en otro barrio, escribime y vemos."}},
+{"@type":"Question","name":"¿Cuánto cuestan las clases?","acceptedAnswer":{"@type":"Answer","text":"El precio de cada paquete lo paso actualizado por WhatsApp, así no te quedás con un valor viejo. Escribime, contame qué necesitás y te mando el detalle sin compromiso."}},
+{"@type":"Question","name":"¿En qué horarios dan clases?","acceptedAnswer":{"@type":"Answer","text":"Los horarios son flexibles y los armamos según tu disponibilidad. Consultame por WhatsApp qué días y franjas te sirven y te digo qué tengo libre."}},
+{"@type":"Question","name":"¿Ayudás con el examen teórico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los paquetes Estándar e Intensivo incluyen orientación para el teórico: te explico cómo es el trámite, qué estudiar y en qué se equivoca más la gente. El examen lo rendís vos, pero no vas a ir a ciegas."}},
+{"@type":"Question","name":"¿Me prestás el auto para rendir el examen práctico?","acceptedAnswer":{"@type":"Answer","text":"Sí, rendís con el mismo auto en el que aprendiste. Está incluido en el paquete Intensivo y en el VIP Examen, que además suma un repaso del circuito y acompañamiento el día del examen."}}
+]}
+</script>
+</head>
+<body>
+
+<!-- Sprite de íconos: SVG inline, sin dependencias externas. -->
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <!-- Volante del logo. La masa de los rayos se compone por sustraccion:
+         disco interior, recortado arriba por un arco y abajo por dos circulos
+         que dejan las dos alas y la pata central; el hub va calado (deja pasar
+         el fondo, por eso funciona igual en azul sobre claro y en blanco sobre
+         navy en el footer). clipPath y mask viven fuera del <symbol> para que
+         los ids resuelvan en las tres instancias de <use>. -->
+    <clipPath id="c-wheel"><circle cx="12" cy="12" r="8.675"/></clipPath>
+    <mask id="m-wheel" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="#000"/>
+      <g clip-path="url(#c-wheel)">
+        <circle cx="12" cy="20.94" r="12.24" fill="#fff"/>
+        <circle cx="4.3"  cy="20.5" r="6.2" fill="#000"/>
+        <circle cx="19.7" cy="20.5" r="6.2" fill="#000"/>
+        <circle cx="12" cy="12" r="2.55" fill="#000"/>
+      </g>
+    </mask>
+    <symbol id="i-wheel" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9.6" fill="none" stroke="currentColor" stroke-width="1.85"/>
+      <rect width="24" height="24" fill="currentColor" mask="url(#m-wheel)"/>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.53.05-1.03.24-3.5-.72-2.98-1.17-4.85-4.25-5-4.45-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.58-.37.78-.37.2 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.8 1.98.87 2.13.07.15.12.32.02.51-.1.2-.2.32-.39.5-.19.2-.29.31-.42.51-.13.2-.28.44-.06.83.22.39.79 1.3 1.68 2.1 1.14 1.02 2.1 1.34 2.4 1.49.29.15.58.13.8-.08.22-.2.85-.98 1.08-1.32.24-.34.47-.28.79-.16.32.12 2.02.95 2.37 1.13.34.17.58.26.66.4.09.15.09.83-.15 1.5Z"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M6 6l12 12M18 6L6 18"/>
+    </symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 13l1.8-5.2A2 2 0 0 1 6.7 6.5h10.6a2 2 0 0 1 1.9 1.3L21 13v4a1 1 0 0 1-1 1h-1.2M3 13v4a1 1 0 0 0 1 1h1.2M3 13h18"/>
+      <circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/>
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>
+    </symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M17 17l-2 2M14 14l-2 2"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/>
+    </symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="9" r="5.5"/><path d="m9 8.8 2 2 4-4M8.4 14.4 7 22l5-2.4L17 22l-1.4-7.6"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4.5 12.5 9.5 17.5 19.5 6.5"/>
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <path d="M12 5v14M5 12h14"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================ NAV ============================ -->
+<header class="site-header" data-header>
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="logo" href="/">
+      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+    </a>
+
+    <div class="nav-desktop">
+      <a class="nav-link" href="#servicios">Servicios</a>
+      <a class="nav-link" href="#zonas">Zonas</a>
+      <a class="nav-link" href="#blog">Blog</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+      <a class="btn-wa btn-wa--sm" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp
+      </a>
+    </div>
+
+    <button class="icon-btn nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+      <svg width="22" height="22" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- ====================== OVERLAY MENÚ MOBILE ====================== -->
+<div class="mobile-menu" id="mobile-menu" data-menu hidden>
+  <div class="mobile-menu__top">
+    <span class="logo">
+      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+    </span>
+    <button class="icon-btn" type="button" aria-label="Cerrar menú" data-menu-close>
+      <svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu__links">
+    <a href="#servicios" data-menu-link>Servicios</a>
+    <a href="#zonas" data-menu-link>Zonas</a>
+    <a href="#blog" data-menu-link>Blog</a>
+    <a href="#contacto" data-menu-link>Contacto</a>
+  </div>
+  <a class="btn-wa btn-wa--block" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+    <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>Pedir clase por WhatsApp
+  </a>
+</div>
+
+<main>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div>
+        <div class="badge"><span class="badge__star">★</span> 4.9 en Google · 200+ alumnos · 5 zonas en CABA</div>
+        <h1 class="hero__title">Clases de manejo a domicilio en CABA con instructor certificado</h1>
+        <p class="hero__sub">Te paso a buscar por tu casa o el trabajo. VW Polo automático con doble comando.</p>
+        <div class="hero__actions">
+          <a class="btn-wa btn-wa--md" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+            <svg width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>Pedir clase por WhatsApp
+          </a>
+          <a class="btn-outline" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img class="hero__img" src="/images/emi-instructor-auto.webp" width="1184" height="2096"
+             alt="Emi, instructor de clases de manejo en CABA, al volante de su auto durante una clase"
+             fetchpriority="high" decoding="async">
+        <div class="stat-card">
+          <span class="stat-card__num">98%</span>
+          <span class="stat-card__txt">aprueban<br><span>en el primer intento</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== SOBRE MÍ ========================== -->
+  <section class="section section--about" id="sobre-mi">
+    <div class="about">
+      <img class="about__img" src="/images/emi-clase-alumno.jpg" width="578" height="883"
+           alt="Emi explicándole el uso del volante a un alumno durante una clase de manejo a domicilio en su VW Polo automático"
+           loading="lazy" decoding="async">
+      <div>
+        <h2 class="h2">Hola, soy Emi</h2>
+        <p class="about__p">Soy instructor de manejo con matrícula habilitante del GCBA y más de 3 años de experiencia enseñando a manejar en Buenos Aires. Estuve trabajando en una de las escuelas más reconocidas de la ciudad y ahora decido hacerlo de forma independiente para poder darte algo que las grandes escuelas no pueden: atención personalizada de verdad.</p>
+        <p class="about__p">La diferencia es simple: cuando tomás clases conmigo, sabés exactamente con quién vas a estar. Siempre el mismo instructor, que te conoce, entiende cómo aprendés y te acompaña hasta que aprobás.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="chip chip--blue"><svg width="22" height="22" aria-hidden="true"><use href="#i-medal"/></svg></span>
+            <div>
+              <h3 class="feature__title">Instructor Certificado</h3>
+              <p class="feature__txt">Matrícula habilitante del Gobierno de la Ciudad de Buenos Aires</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="chip chip--amber"><svg width="22" height="22" aria-hidden="true"><use href="#i-car"/></svg></span>
+            <div>
+              <h3 class="feature__title">VW Polo Automático · Doble Comando</h3>
+              <p class="feature__txt">Volkswagen Polo con caja automática y pedales de seguridad para aprendizaje seguro</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="chip chip--blue"><svg width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <div>
+              <h3 class="feature__title">Servicio Puerta a Puerta</h3>
+              <p class="feature__txt">Te paso a buscar en tu casa, trabajo o punto de encuentro</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="chip chip--green"><svg width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg></span>
+            <div>
+              <h3 class="feature__title">Contacto Directo por WhatsApp</h3>
+              <p class="feature__txt">Hablás conmigo directamente, sin intermediarios ni agencias</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== SERVICIOS ========================== -->
+  <section class="section" id="servicios">
+    <h2 class="h2">Servicios de clases de manejo en CABA</h2>
+    <p class="section__sub">Elegí el plan que mejor se adapte a tu tiempo.</p>
+    <div class="cards-3">
+      <article class="card card--hover">
+        <span class="chip chip--lg chip--blue"><svg width="26" height="26" aria-hidden="true"><use href="#i-car"/></svg></span>
+        <h3 class="card__title">Clases Particulares</h3>
+        <p class="card__txt">Arrancá desde cero o perfeccioná tu técnica. Horarios flexibles.</p>
+        <a class="card__link" href="#paquetes">Ver paquetes →</a>
+      </article>
+      <article class="card card--hover">
+        <span class="chip chip--lg chip--amber"><svg width="26" height="26" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+        <h3 class="card__title">Clases Intensivas</h3>
+        <p class="card__txt">Aprobá el examen en pocos días con un plan acelerado.</p>
+        <a class="card__link" href="#paquetes">Ver el plan intensivo →</a>
+      </article>
+      <article class="card card--hover">
+        <span class="chip chip--lg chip--blue"><svg width="26" height="26" aria-hidden="true"><use href="#i-key"/></svg></span>
+        <h3 class="card__title">Alquiler de auto para examen</h3>
+        <p class="card__txt">Rendí el práctico con nuestro vehículo, sin riesgos.</p>
+        <a class="card__link" href="#paquetes">Ver el paquete VIP Examen →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================== PAQUETES ========================== -->
+  <section class="packages" id="paquetes">
+    <div class="section">
+      <div class="packages__head">
+        <div class="eyebrow"><span class="eyebrow__dot"></span>Paquetes</div>
+        <h2 class="h2">Elegí el paquete ideal para vos</h2>
+        <p class="packages__lead">Todos los paquetes incluyen clases en VW Polo automático con doble comando, instructor certificado y servicio puerta a puerta. El precio actualizado lo consultás por WhatsApp.</p>
+      </div>
+
+      <div class="pkg-grid" data-pkg-grid>
+
+        <article class="pkg">
+          <div class="pkg__badge-row"></div>
+          <h3 class="pkg__title">Starter</h3>
+          <p class="pkg__txt">Ideal para quienes quieren un primer acercamiento al manejo o repasar lo básico.</p>
+          <ul class="pkg__list">
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>4 clases de 60 minutos</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Auto doble comando</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Instructor certificado</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Puerta a puerta</li>
+          </ul>
+          <div class="pkg__foot">
+            <span class="pkg__price">Precio por WhatsApp</span>
+            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Starter" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </article>
+
+        <article class="pkg pkg--featured">
+          <div class="pkg__badge-row"><span class="pkg__badge">Más popular</span></div>
+          <h3 class="pkg__title">Estándar</h3>
+          <p class="pkg__txt">El más elegido. Para quienes quieren llegar al examen con confianza real.</p>
+          <ul class="pkg__list">
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>8 clases de 60 minutos</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Auto doble comando</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Instructor certificado</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Puerta a puerta</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Orientación para el teórico</li>
+          </ul>
+          <div class="pkg__foot">
+            <span class="pkg__price">Precio por WhatsApp</span>
+            <a class="btn-pkg btn-pkg--accent" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Est%C3%A1ndar" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </article>
+
+        <article class="pkg">
+          <div class="pkg__badge-row"></div>
+          <h3 class="pkg__title">Intensivo</h3>
+          <p class="pkg__txt">Para quien quiere sacarse el registro lo antes posible. Cursada concentrada.</p>
+          <ul class="pkg__list">
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>12 clases de 60 minutos</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Auto doble comando</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Instructor certificado</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Puerta a puerta</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Orientación para el teórico</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Préstamo del auto para el examen</li>
+          </ul>
+          <div class="pkg__foot">
+            <span class="pkg__price">Precio por WhatsApp</span>
+            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Intensivo" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </article>
+
+        <article class="pkg">
+          <div class="pkg__badge-row"></div>
+          <h3 class="pkg__title">VIP Examen</h3>
+          <p class="pkg__txt">Ya sabés manejar y querés rendir. Te prestamos el auto y hacemos un repaso del circuito.</p>
+          <ul class="pkg__list">
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Clase de repaso pre-examen</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Recorrido circuito de examen</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Préstamo del auto para rendir</li>
+            <li><svg class="ico-check" width="17" height="17" aria-hidden="true"><use href="#i-check"/></svg>Acompañamiento el día del examen</li>
+          </ul>
+          <div class="pkg__foot">
+            <span class="pkg__price">Precio por WhatsApp</span>
+            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20VIP%20Examen" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== ZONAS =========================== -->
+  <section class="zones" id="zonas">
+    <div class="zones__inner">
+      <h2 class="h2 zones__title">Doy clases de manejo en estos barrios de CABA</h2>
+      <div class="zones__chips">
+        <a class="zone-chip" href="#contacto"><svg width="16" height="16" aria-hidden="true"><use href="#i-pin"/></svg>Palermo</a>
+        <a class="zone-chip" href="#contacto"><svg width="16" height="16" aria-hidden="true"><use href="#i-pin"/></svg>Belgrano</a>
+        <a class="zone-chip" href="#contacto"><svg width="16" height="16" aria-hidden="true"><use href="#i-pin"/></svg>Caballito</a>
+        <a class="zone-chip" href="#contacto"><svg width="16" height="16" aria-hidden="true"><use href="#i-pin"/></svg>Villa Urquiza</a>
+        <a class="zone-chip" href="#contacto"><svg width="16" height="16" aria-hidden="true"><use href="#i-pin"/></svg>Zona Norte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIOS ======================== -->
+  <section class="section">
+    <h2 class="h2">Lo que dicen mis alumnas y alumnos</h2>
+    <div class="cards-3">
+      <figure class="quote">
+        <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>“Emi tiene una paciencia increíble. En 8 clases ya me sentía segura para rendir.”</blockquote>
+        <figcaption><strong>Valentina R.</strong> · Palermo</figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>“Me enseñó todo desde cero y aprobé el examen a la primera. Súper recomendable.”</blockquote>
+        <figcaption><strong>Martín G.</strong> · Belgrano</figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>“Muy buena onda y muy profesional. Los horarios son súper flexibles.”</blockquote>
+        <figcaption><strong>Lucía F.</strong> · Villa Urquiza</figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>“Gracias por acompañarme siempre. Hoy celebro una licencia, pero sobre todo celebro no haber bajado los brazos.”</blockquote>
+        <figcaption><strong>Silvina</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="faq" id="faq">
+    <div class="faq__inner">
+      <h2 class="h2 faq__title">Preguntas frecuentes</h2>
+
+      <div class="faq__block" data-faq>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q0" aria-expanded="false" aria-controls="faq-a0">
+              ¿Cuántas clases necesito para aprender a manejar?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a0" role="region" aria-labelledby="faq-q0">
+            <div class="faq-a__clip">
+              <p>Depende de tu punto de partida. La mayoría llega bien preparado con el paquete de 8 clases; si arrancás de cero o querés ir tranquilo, el de 12 te da más margen. En la primera clase vemos cómo venís y te digo con franqueza cuántas te faltan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+              ¿Las clases son en caja manual o automática?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <div class="faq-a__clip">
+              <p>Las clases son en un VW Polo con caja automática y doble comando. Al no tener que pensar en el embrague podés concentrarte en la calle, y los pedales de seguridad hacen que todo sea mucho más tranquilo desde el primer día.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+              ¿Vienen a buscarme? ¿Dónde se hacen las clases?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <div class="faq-a__clip">
+              <p>Sí, el servicio es puerta a puerta: te paso a buscar por tu casa, el trabajo o donde te quede cómodo. Doy clases en Palermo, Belgrano, Caballito, Villa Urquiza y zona norte; si estás en otro barrio, escribime y vemos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+              ¿Cuánto cuestan las clases?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <div class="faq-a__clip">
+              <p>El precio de cada paquete lo paso actualizado por WhatsApp, así no te quedás con un valor viejo. Escribime, contame qué necesitás y te mando el detalle sin compromiso.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+              ¿En qué horarios dan clases?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <div class="faq-a__clip">
+              <p>Los horarios son flexibles y los armamos según tu disponibilidad. Consultame por WhatsApp qué días y franjas te sirven y te digo qué tengo libre.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+              ¿Ayudás con el examen teórico?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <div class="faq-a__clip">
+              <p>Sí. Los paquetes Estándar e Intensivo incluyen orientación para el teórico: te explico cómo es el trámite, qué estudiar y en qué se equivoca más la gente. El examen lo rendís vos, pero no vas a ir a ciegas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__h">
+            <button class="faq-q" type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
+              ¿Me prestás el auto para rendir el examen práctico?
+              <span class="faq-q__icon"><svg width="15" height="15" aria-hidden="true"><use href="#i-plus"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6">
+            <div class="faq-a__clip">
+              <p>Sí, rendís con el mismo auto en el que aprendiste. Está incluido en el paquete Intensivo y en el VIP Examen, que además suma un repaso del circuito y acompañamiento el día del examen.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CTA FINAL ========================== -->
+  <section class="cta" id="contacto">
+    <div class="cta__inner">
+      <h2 class="cta__title">¿Listo para aprender a manejar?</h2>
+      <p class="cta__sub">Escribime y coordinamos tu primera clase sin compromiso.</p>
+      <a class="btn-wa btn-wa--lg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================ BLOG ============================ -->
+  <section class="section" id="blog">
+    <h2 class="h2">Consejos para sacar el registro</h2>
+    <div class="cards-3">
+      <article class="post card--hover">
+        <div class="ph ph--post ph--blue" role="img" aria-label="Trámite de licencia de conducir en una oficina pública de Buenos Aires">
+          <span class="ph__label ph__label--sm">foto trámite licencia</span>
+        </div>
+        <div class="post__body">
+          <time class="post__date" datetime="2026-01-12">12 ene 2026</time>
+          <h3 class="post__title">Requisitos para sacar la licencia en Buenos Aires 2026</h3>
+          <p class="post__txt">Turnos, documentación y costos actualizados.</p>
+          <a class="post__link" href="/blog/requisitos-licencia-conducir-buenos-aires-2026">Leer los requisitos →</a>
+        </div>
+      </article>
+      <article class="post card--hover">
+        <div class="ph ph--post ph--amber" role="img" aria-label="Pista de examen práctico con conos en CABA">
+          <span class="ph__label ph__label--sm">foto pista examen</span>
+        </div>
+        <div class="post__body">
+          <time class="post__date" datetime="2026-02-28">28 feb 2026</time>
+          <h3 class="post__title">Cómo prepararse para el examen práctico en CABA</h3>
+          <p class="post__txt">Qué evalúan y cómo llegar tranquilo al día del examen.</p>
+          <a class="post__link" href="/blog/como-prepararse-examen-practico-caba">Leer cómo prepararte →</a>
+        </div>
+      </article>
+      <article class="post card--hover">
+        <div class="ph ph--post ph--slate" role="img" aria-label="Manos de una persona principiante sobre el volante">
+          <span class="ph__label ph__label--sm">foto manos volante</span>
+        </div>
+        <div class="post__body">
+          <time class="post__date" datetime="2026-03-15">15 mar 2026</time>
+          <h3 class="post__title">Los errores más comunes de los principiantes al volante</h3>
+          <p class="post__txt">Ocho hábitos que conviene corregir desde la primera clase.</p>
+          <a class="post__link" href="/blog/errores-comunes-principiantes">Leer los 8 errores →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div>
+      <span class="logo logo--footer">
+        <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+      </span>
+      <p class="site-footer__tagline">Aprendé a manejar con un instructor de confianza.</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Enlaces del pie">
+      <a href="#servicios">Servicios</a>
+      <a href="#zonas">Zonas</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+      <a href="/politica-de-privacidad">Política de privacidad</a>
+    </nav>
+    <div class="site-footer__social">
+      <a class="social social--wa" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>
+      </a>
+      <a class="social social--ig" href="https://instagram.com/emimanejo" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-instagram"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="site-footer__bar">© 2026 EmiManejo · CABA, Argentina</div>
+</footer>
+
+<!-- ====================== BOTÓN FLOTANTE WA ====================== -->
+<a class="wa-float" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" data-wa-float>
+  <svg width="30" height="30" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+</body>
+</html>

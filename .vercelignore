@@ -1,0 +1,7 @@
+# El CLI sube lo que hay en disco, no lo que está commiteado.
+# Estas carpetas nunca deben llegar a un deploy.
+.gstack/
+.claude/
+.git/
+node_modules/
+*.log
