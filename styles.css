@@ -319,6 +319,15 @@ body.is-menu-open { overflow: hidden; }
 .ph--about { aspect-ratio: 4 / 4.4; background: repeating-linear-gradient(135deg, #EEF2F7 0 10px, #E2E8F0 10px 20px); }
 .ph--post  { aspect-ratio: 16 / 9; border-radius: 0; padding: 12px; }
 
+/* Fotos reales que reemplazan a los .ph: mismo encuadre 16/9 que el
+   placeholder, así el layout no se mueve al cambiar uno por otro. */
+.post__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .ph--blue  { background: repeating-linear-gradient(135deg, #E8F1FF 0 10px, #DDEAFE 10px 20px); }
 .ph--amber { background: repeating-linear-gradient(135deg, #FEF6E0 0 10px, #FDECC8 10px 20px); }
 .ph--amber .ph__label { color: #92400E; }
@@ -1097,6 +1106,13 @@ body.is-menu-open { overflow: hidden; }
   padding: 0 var(--gutter);
 }
 .article__hero .ph { aspect-ratio: 16 / 9; }
+.article__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 .article__body {
   max-width: 820px;

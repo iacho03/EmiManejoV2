@@ -44,7 +44,7 @@ Estos puntos están anotados también en el comentario de cabecera de `index.htm
 
 - **WhatsApp**: el número `5491100000000` es un placeholder y aparece 11 veces (10 links + `telephone` del JSON-LD).
 - **Dominio**: el canonical, los Open Graph y el JSON-LD apuntan a `emanejo.com.ar` (sin la "i"). Si el dominio real es `emimanejo.com.ar`, hay que corregir 17 referencias más `robots.txt` y `sitemap.xml`.
-- **Imágenes**: las 3 del blog siguen siendo placeholders CSS (`.ph`). Al reemplazarlas por `<img>`, usar el `aria-label` actual como base del `alt`.
+- **Imágenes**: quedan 2 placeholders CSS (`.ph`), los de las notas "examen práctico" y "errores comunes". Al reemplazarlos por `<img>`, usar el `aria-label` actual como base del `alt`.
 - **Instagram**: verificar el handle `@emimanejo` (va en `sameAs` del JSON-LD).
 - **`/politica-de-privacidad`**: está linkeada en el footer y no existe — es el único 404 que queda.
 - **`aggregateRating`**: se dejó fuera del JSON-LD a propósito. El "4.9 en Google" del hero no es verificable y declararlo puede derivar en una acción manual de Google.

@@ -9,9 +9,11 @@
   ------------------------------------------------------------------
   PLACEHOLDERS A REEMPLAZAR ANTES DE PUBLICAR:
   · Número de WhatsApp 5491100000000 — aparece 11 veces (10 links + JSON-LD telephone).
-  · 3 imágenes: placeholders CSS (.ph) — las 3 de blog.
-    Fotos reales ya cargadas: hero (/images/emi-instructor-auto.webp)
-    y "Hola, soy Emi" (/images/emi-clase-alumno.jpg).
+  · 2 imágenes: placeholders CSS (.ph) — las de "examen práctico" y
+    "errores comunes" del blog.
+    Fotos reales ya cargadas: hero (/images/emi-instructor-auto.webp),
+    "Hola, soy Emi" (/images/emi-clase-alumno.jpg) y la nota de requisitos
+    (/images/licencia-nacional-conducir.jpg, en la card y en la subpágina).
     Al reemplazar por <img>, usar el aria-label actual como base del alt.
   · Instagram: verificar el handle @emimanejo (va en sameAs del JSON-LD).
   · DOMINIO: canonical, OG y JSON-LD apuntan a emanejo.com.ar (sin "i").
@@ -557,9 +559,9 @@
     <h2 class="h2">Consejos para sacar el registro</h2>
     <div class="cards-3">
       <article class="post card--hover">
-        <div class="ph ph--post ph--blue" role="img" aria-label="Trámite de licencia de conducir en una oficina pública de Buenos Aires">
-          <span class="ph__label ph__label--sm">foto trámite licencia</span>
-        </div>
+        <img class="post__img" src="/images/licencia-nacional-conducir.jpg" width="2000" height="1500"
+             alt="Licencia Nacional de Conducir argentina sostenida en la mano por una persona al volante de su auto"
+             loading="lazy" decoding="async">
         <div class="post__body">
           <time class="post__date" datetime="2026-01-12">12 ene 2026</time>
           <h3 class="post__title">Requisitos para sacar la licencia en Buenos Aires 2026</h3>
