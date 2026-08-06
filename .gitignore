@@ -1,5 +1,6 @@
 # Herramientas del agente (incluye tokens de sesión — nunca subir)
 .gstack/
+.claude/
 
 # Dependencias / builds
 node_modules/
