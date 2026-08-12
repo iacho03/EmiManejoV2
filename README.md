@@ -1,6 +1,6 @@
-# EmiManejo
+# Aprende a Manejar
 
-Landing page de **EmiManejo** — clases de manejo a domicilio en CABA (Palermo, Belgrano y zonas aledañas).
+Landing page de **Aprende a Manejar** (`aprendeamanejar.ar`) — clases de manejo a domicilio en CABA (Palermo, Belgrano y zonas aledañas).
 
 Sitio estático: HTML, CSS y JavaScript vanilla. Sin build, sin dependencias, sin framework.
 
@@ -42,8 +42,8 @@ Después abrí http://localhost:4321.
 
 Estos puntos están anotados también en el comentario de cabecera de `index.html`:
 
-- **WhatsApp**: el número `5491100000000` es un placeholder y aparece 11 veces (10 links + `telephone` del JSON-LD).
-- **Dominio**: el canonical, los Open Graph y el JSON-LD apuntan a `emanejo.com.ar` (sin la "i"). Si el dominio real es `emimanejo.com.ar`, hay que corregir 17 referencias más `robots.txt` y `sitemap.xml`.
+- **Dominio**: `aprendeamanejar.ar` tiene que estar registrado y apuntando a Vercel. Hasta entonces el `canonical`, los Open Graph y el JSON-LD apuntan a un dominio que no responde.
+- **Instagram**: el handle sigue siendo `@emimanejo`, de la marca anterior. Va en el `sameAs` del JSON-LD, o sea que le declara a Google que esa cuenta es del negocio.
 - **Imágenes**: ya no quedan placeholders. Las clases `.ph` / `.ph--*` de `styles.css` quedaron sin uso y se pueden borrar. `errores-comunes.jpg` es de 480×270 y se usa como hero a 900px: conviene reemplazarla por una versión más grande.
 - **Instagram**: verificar el handle `@emimanejo` (va en `sameAs` del JSON-LD).
 - **`/politica-de-privacidad`**: está linkeada en el footer y no existe — es el único 404 que queda.

@@ -5,17 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
-  EmiManejo — landing page
+  Aprende a Manejar — landing page
   ------------------------------------------------------------------
-  PLACEHOLDERS A REEMPLAZAR ANTES DE PUBLICAR:
-  · Número de WhatsApp 5491100000000 — aparece 11 veces (10 links + JSON-LD telephone).
-  · Imágenes: ya no quedan placeholders, las 5 fotos son reales.
-    Las clases .ph / .ph--* de styles.css quedaron sin uso.
-    Al reemplazar por <img>, usar el aria-label actual como base del alt.
+  RESUELTO:
+  · WhatsApp: +54 11 6122-8032 (5491161228032) en los 25 links y en el
+    telephone del JSON-LD.
+  · Imágenes: las 5 son reales, no quedan placeholders. Las clases
+    .ph / .ph--* de styles.css quedaron sin uso y se pueden borrar.
+  · Marca y dominio: "Aprende a Manejar" sobre aprendeamanejar.ar.
+
+  PENDIENTE ANTES DE PUBLICAR:
+  · DOMINIO: aprendeamanejar.ar tiene que estar registrado y apuntando a
+    Vercel. Hasta entonces el canonical apunta a un dominio que no responde.
   · Instagram: verificar el handle @emimanejo (va en sameAs del JSON-LD).
-  · DOMINIO: canonical, OG y JSON-LD apuntan a emanejo.com.ar (sin "i").
-    Verificar contra el dominio real antes de publicar — si es emimanejo.com.ar
-    hay que corregir 17 referencias + robots.txt + sitemap.xml.
+    Quedó con la marca vieja a propósito, es una cuenta real.
   · /politica-de-privacidad sigue linkeada en el footer y no existe: es el
     único 404 que queda. Las rutas /servicios/… y /clases-de-manejo-… se
     redirigieron a anclas de esta misma página y están en Disallow del robots.txt.
@@ -24,25 +27,25 @@
   ------------------------------------------------------------------
 -->
 
-<title>Clases de Manejo a Domicilio en CABA | EmiManejo</title>
+<title>Clases de Manejo a Domicilio en CABA | Aprende a Manejar</title>
 <meta name="description" content="Clases de manejo a domicilio en Palermo, Belgrano y toda CABA. Instructor certificado, VW Polo automático. Pedí tu clase por WhatsApp.">
 <meta name="keywords" content="clases de manejo a domicilio CABA, instructor de manejo particular Buenos Aires, clases de manejo auto automático, aprender a manejar CABA">
-<link rel="canonical" href="https://emanejo.com.ar/">
-<meta name="author" content="EmiManejo">
+<link rel="canonical" href="https://aprendeamanejar.ar/">
+<meta name="author" content="Aprende a Manejar">
 <meta name="geo.region" content="AR-C">
 <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires">
-<meta property="og:site_name" content="EmiManejo">
-<meta property="og:title" content="Clases de manejo a domicilio en CABA — EmiManejo">
+<meta property="og:site_name" content="Aprende a Manejar">
+<meta property="og:title" content="Clases de manejo a domicilio en CABA — Aprende a Manejar">
 <meta property="og:description" content="Instructor certificado, VW Polo automático con doble comando. Te paso a buscar por Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://emanejo.com.ar/">
+<meta property="og:url" content="https://aprendeamanejar.ar/">
 <meta property="og:locale" content="es_AR">
-<meta property="og:image" content="https://emanejo.com.ar/images/emi-clase-alumno.jpg">
+<meta property="og:image" content="https://aprendeamanejar.ar/images/emi-clase-alumno.jpg">
 <meta property="og:image:alt" content="Emi explicándole el volante a un alumno durante una clase de manejo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clases de manejo a domicilio en CABA — EmiManejo">
+<meta name="twitter:title" content="Clases de manejo a domicilio en CABA — Aprende a Manejar">
 <meta name="twitter:description" content="Instructor certificado, VW Polo automático con doble comando. Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.">
-<meta name="twitter:image" content="https://emanejo.com.ar/images/emi-clase-alumno.jpg">
+<meta name="twitter:image" content="https://aprendeamanejar.ar/images/emi-clase-alumno.jpg">
 <meta name="robots" content="index, follow">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,14 +61,14 @@
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"DrivingSchool",
-"@id":"https://emanejo.com.ar/#business",
-"name":"EmiManejo",
+"@id":"https://aprendeamanejar.ar/#business",
+"name":"Aprende a Manejar",
 "description":"Clases de manejo a domicilio en CABA con instructor certificado. VW Polo automático con doble comando, servicio puerta a puerta en Palermo, Belgrano, Caballito, Villa Urquiza y zona norte.",
-"url":"https://emanejo.com.ar/",
-"image":"https://emanejo.com.ar/images/emi-clase-alumno.jpg",
-"logo":"https://emanejo.com.ar/images/emi-instructor-auto.webp",
+"url":"https://aprendeamanejar.ar/",
+"image":"https://aprendeamanejar.ar/images/emi-clase-alumno.jpg",
+"logo":"https://aprendeamanejar.ar/images/emi-instructor-auto.webp",
 "address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressRegion":"CABA","addressCountry":"AR"},
-"telephone":"+5491100000000",
+"telephone":"+5491161228032",
 "priceRange":"$$",
 "currenciesAccepted":"ARS",
 "sameAs":["https://instagram.com/emimanejo"],
@@ -84,11 +87,11 @@
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite",
-"@id":"https://emanejo.com.ar/#website",
-"name":"EmiManejo",
-"url":"https://emanejo.com.ar/",
+"@id":"https://aprendeamanejar.ar/#website",
+"name":"Aprende a Manejar",
+"url":"https://aprendeamanejar.ar/",
 "inLanguage":"es-AR",
-"publisher":{"@id":"https://emanejo.com.ar/#business"}}
+"publisher":{"@id":"https://aprendeamanejar.ar/#business"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -168,7 +171,7 @@
 <header class="site-header" data-header>
   <nav class="nav" aria-label="Navegación principal">
     <a class="logo" href="/">
-      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>Aprende a Manejar
     </a>
 
     <div class="nav-desktop">
@@ -176,7 +179,7 @@
       <a class="nav-link" href="#zonas">Zonas</a>
       <a class="nav-link" href="#blog">Blog</a>
       <a class="nav-link" href="#contacto">Contacto</a>
-      <a class="btn-wa btn-wa--sm" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+      <a class="btn-wa btn-wa--sm" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
         <svg width="17" height="17" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp
       </a>
     </div>
@@ -191,7 +194,7 @@
 <div class="mobile-menu" id="mobile-menu" data-menu hidden>
   <div class="mobile-menu__top">
     <span class="logo">
-      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+      <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>Aprende a Manejar
     </span>
     <button class="icon-btn" type="button" aria-label="Cerrar menú" data-menu-close>
       <svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg>
@@ -203,7 +206,7 @@
     <a href="#blog" data-menu-link>Blog</a>
     <a href="#contacto" data-menu-link>Contacto</a>
   </div>
-  <a class="btn-wa btn-wa--block" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+  <a class="btn-wa btn-wa--block" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
     <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>Pedir clase por WhatsApp
   </a>
 </div>
@@ -218,7 +221,7 @@
         <h1 class="hero__title">Clases de manejo a domicilio en CABA con instructor certificado</h1>
         <p class="hero__sub">Te paso a buscar por tu casa o el trabajo. VW Polo automático con doble comando.</p>
         <div class="hero__actions">
-          <a class="btn-wa btn-wa--md" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+          <a class="btn-wa btn-wa--md" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
             <svg width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg>Pedir clase por WhatsApp
           </a>
           <a class="btn-outline" href="#servicios">Ver servicios</a>
@@ -331,7 +334,7 @@
           </ul>
           <div class="pkg__foot">
             <span class="pkg__price">Precio por WhatsApp</span>
-            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Starter" target="_blank" rel="noopener">Consultar</a>
+            <a class="btn-pkg" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Starter" target="_blank" rel="noopener">Consultar</a>
           </div>
         </article>
 
@@ -348,7 +351,7 @@
           </ul>
           <div class="pkg__foot">
             <span class="pkg__price">Precio por WhatsApp</span>
-            <a class="btn-pkg btn-pkg--accent" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Est%C3%A1ndar" target="_blank" rel="noopener">Consultar</a>
+            <a class="btn-pkg btn-pkg--accent" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Est%C3%A1ndar" target="_blank" rel="noopener">Consultar</a>
           </div>
         </article>
 
@@ -366,7 +369,7 @@
           </ul>
           <div class="pkg__foot">
             <span class="pkg__price">Precio por WhatsApp</span>
-            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Intensivo" target="_blank" rel="noopener">Consultar</a>
+            <a class="btn-pkg" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20Intensivo" target="_blank" rel="noopener">Consultar</a>
           </div>
         </article>
 
@@ -382,7 +385,7 @@
           </ul>
           <div class="pkg__foot">
             <span class="pkg__price">Precio por WhatsApp</span>
-            <a class="btn-pkg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20VIP%20Examen" target="_blank" rel="noopener">Consultar</a>
+            <a class="btn-pkg" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20VIP%20Examen" target="_blank" rel="noopener">Consultar</a>
           </div>
         </article>
 
@@ -545,7 +548,7 @@
     <div class="cta__inner">
       <h2 class="cta__title">¿Listo para aprender a manejar?</h2>
       <p class="cta__sub">Escribime y coordinamos tu primera clase sin compromiso.</p>
-      <a class="btn-wa btn-wa--lg" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
+      <a class="btn-wa btn-wa--lg" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases" target="_blank" rel="noopener">
         <svg width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp
       </a>
     </div>
@@ -598,7 +601,7 @@
   <div class="site-footer__grid">
     <div>
       <span class="logo logo--footer">
-        <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>EmiManejo
+        <svg class="logo-mark" width="26" height="26" aria-hidden="true"><use href="#i-wheel"/></svg>Aprende a Manejar
       </span>
       <p class="site-footer__tagline">Aprendé a manejar con un instructor de confianza.</p>
     </div>
@@ -610,7 +613,7 @@
       <a href="/politica-de-privacidad">Política de privacidad</a>
     </nav>
     <div class="site-footer__social">
-      <a class="social social--wa" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <a class="social social--wa" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
         <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>
       </a>
       <a class="social social--ig" href="https://instagram.com/emimanejo" target="_blank" rel="noopener" aria-label="Instagram">
@@ -618,11 +621,11 @@
       </a>
     </div>
   </div>
-  <div class="site-footer__bar">© 2026 EmiManejo · CABA, Argentina</div>
+  <div class="site-footer__bar">© 2026 Aprende a Manejar · CABA, Argentina</div>
 </footer>
 
 <!-- ====================== BOTÓN FLOTANTE WA ====================== -->
-<a class="wa-float" href="https://wa.me/5491100000000?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" data-wa-float>
+<a class="wa-float" href="https://wa.me/5491161228032?text=Hola%20Emi%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" data-wa-float>
   <svg width="30" height="30" aria-hidden="true"><use href="#i-wa"/></svg>
 </a>
 

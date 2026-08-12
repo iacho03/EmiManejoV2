@@ -7,4 +7,4 @@ Disallow: /servicios/
 Disallow: /clases-de-manejo-
 Disallow: /politica-de-privacidad
 
-Sitemap: https://emanejo.com.ar/sitemap.xml
+Sitemap: https://aprendeamanejar.ar/sitemap.xml
