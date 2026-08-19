@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Aprende a Manejar">
+  <!-- Mismo volante que el símbolo #i-wheel del sprite de index.html, escalado
+       sobre una placa azul (blue-600, #2563EB) para que se lea a 16px en la
+       pestaña. Ojo: un SVG suelto se parsea como XML estricto, así que en los
+       comentarios no puede haber dos guiones seguidos. -->
+  <defs>
+    <clipPath id="fav-clip"><circle cx="12" cy="12" r="8.675"/></clipPath>
+    <mask id="fav-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="#000"/>
+      <g clip-path="url(#fav-clip)">
+        <circle cx="12" cy="20.94" r="12.24" fill="#fff"/>
+        <circle cx="4.3"  cy="20.5" r="6.2" fill="#000"/>
+        <circle cx="19.7" cy="20.5" r="6.2" fill="#000"/>
+        <circle cx="12" cy="12" r="2.55" fill="#000"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="32" height="32" rx="5.1" fill="#2563EB"/>
+  <g transform="translate(1.406 1.406) scale(1.2162)">
+    <circle cx="12" cy="12" r="9.6" fill="none" stroke="#fff" stroke-width="1.85"/>
+    <rect width="24" height="24" fill="#fff" mask="url(#fav-mask)"/>
+  </g>
+</svg>

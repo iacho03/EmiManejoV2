@@ -725,6 +725,8 @@ body.is-menu-open { overflow: hidden; }
   font-size: clamp(24px, 2.8vw, 34px);
   max-width: 24ch;
 }
+.zones__lead { max-width: 62ch; }
+
 .zones__chips {
   margin-top: 28px;
   display: flex;
